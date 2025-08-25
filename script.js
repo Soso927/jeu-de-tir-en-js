@@ -10,7 +10,7 @@ btn.onclick = function () {
     clearInterval(interval); // on arrête une ancienne partie si elle tourne encore
 
     let score = 0;
-    let time = 10;
+    let time = 30;
     container.innerHTML = "";
 
     // affichage initial
@@ -49,7 +49,7 @@ btn.onclick = function () {
         // fin du jeu quand le temps est écoulé 
         if (time <= 0) {
             clearInterval(interval);
-            container.innerHTML = "<p style='text-align:center;'>🎉 Le jeu est terminé 🎉<br>Score final : " + score + "</p>";
+            container.innerHTML = "<p style='text-align:center;'> Le jeu est terminé <br>Score final : " + score + "</p>";
         }
 
     }, 1000);
